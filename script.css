@@ -1,0 +1,303 @@
+/* إعدادات عامة */
+
+body {
+
+    font-family: 'Cairo', sans-serif;  /* خط باللغة العربية */
+
+    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%); /* تدرج لوني حديث */
+
+    color: #fff; /* لون النص الأساسي */
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+}
+
+/* تنسيق العناوين */
+
+h1 {
+
+    font-size: 2.5em;
+
+    margin-bottom: 20px;
+
+    color: #ffffff; /* لون العنوان */
+
+    font-weight: 700;
+
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* ظل خفيف للنص */
+
+}
+
+/* تنسيق الحاوية */
+
+.container {
+
+    background-color: rgba(255, 255, 255, 0.2); /* خلفية بيضاء نصف شفافة */
+
+    padding: 30px;
+
+    border-radius: 15px; /* زوايا مدورة */
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الحاوية */
+
+    max-width: 500px;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+
+/* تنسيق الحقول */
+
+input[type="text"],
+
+input[type="password"],
+
+input[type="file"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    font-size: 1em;
+
+    background-color: #fff; /* خلفية بيضاء للحقول */
+
+    color: #333; /* لون النص داخل الحقول */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف داخل الحق */
+
+}
+
+input[type="text"]:focus,
+
+input[type="password"]:focus,
+
+input[type="file"]:focus {
+
+    outline: none;
+
+    border-color: #6c63ff; /* لون الحدود عند التركيز */
+
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3); /* ظل ملون عند التركيز */
+
+}
+
+/* تنسيق الأزرار */
+
+button {
+
+    background-color: #6c63ff; /* لون خلفية الزر */
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 50px; /* زوايا مدورة بالكامل */
+
+    font-size: 1.1em;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الزر */
+
+}
+
+button:hover {
+
+    background-color: #4e54c8; /* تغيير لون الزر عند التفاعل */
+
+}
+
+/* تنسيق قائمة الشركات */
+
+.company-list {
+
+    margin-top: 20px;
+
+}
+
+.company-item {
+
+    margin: 10px 0;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء شبه شفافة */
+
+    border-radius: 10px; /* زوايا مدورة */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف حول العنصر */
+
+    color: #333; /* لون النص داخل العنصر */
+
+}
+
+/* تنسيق أزرار العمليات */
+
+.company-item button {
+
+    background-color: #ff5252; /* لون زر الحذف */
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 50px; /* زوايا مدورة بالكامل */
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+    margin-left: 10px;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف حول الزر */
+
+}
+
+/* تغيير لون زر الحذف عند التفاعل */
+
+.company-item button:hover {
+
+    background-color: #e53935;
+
+}
+
+/* تنسيق زر التحميل */
+
+.company-item .download-btn {
+
+    background-color: #6c63ff; /* لون زر التحميل */
+
+    padding: 8px 15px;
+
+}
+
+.company-item .download-btn:hover {
+
+    background-color: #4e54c8; /* تغيير لون زر التحميل عند التفاعل */
+
+}
+
+/* تنسيق حاوية البحث */
+
+.search-container {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.search-container input[type="text"] {
+
+    flex-grow: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50px; /* زوايا مدورة بالكامل */
+
+    font-size: 1em;
+
+    background-color: #fff;
+
+    color: #333;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف حول حقل البحث */
+
+}
+
+.search-container input[type="text"]:focus {
+
+    outline: none;
+
+    border-color: #6c63ff; /* لون الحدود عند التركيز */
+
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3); /* ظل ملون عند التركيز */
+
+}
+
+.search-container button {
+
+    background-color: #6c63ff;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 50px; /* زوايا مدورة بالكامل */
+
+    font-size: 1.1em;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+    font-weight: 600;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الزر */
+
+}
+
+.search-container button:hover {
+
+    background-color: #4e54c8; /* تغيير لون الزر عند التفاعل */
+
+}
+
+/* تنسيق رسالة الخطأ */
+
+#errorMessage {
+
+    color: #ff5252;
+
+    display: none;
+
+    font-weight: 600;
+
+    margin-top: 10px;
+
+}

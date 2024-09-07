@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب خدمات المناطق</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شاشة تسجيل الدخول -->
+    <div id="loginContainer" class="container">
+        <h1>تسجيل الدخول</h1>
+        <form id="loginForm">
+            <input type="password" id="loginPassword" placeholder="أدخل كلمة السر" required>
+            <button type="submit">دخول</button>
+        </form>
+        <p id="errorMessage" style="color: red; display:none;">كلمة السر غير صحيحة!</p>
+        <p><a href="#" id="forgotPassword">نسيت كلمة السر؟</a></p>
+    </div>
+
+    <!-- واجهة التطبيق -->
+    <div id="appContainer" class="container" style="display:none;">
+        <h1>مكتب خدمات المناطق</h1>
+
+        <form id="addCompanyForm">
+            <input type="text" id="companyNameInput" placeholder="اسم الشركة" required>
+            <input type="text" id="companyIdInput" placeholder="رقم القيد" required>
+            <input type="file" id="fileInput" accept=".pdf" multiple required>
+            <input type="password" id="uploadPassword" placeholder="كلمة السر" required>
+            <button type="submit">إضافة شركة جديدة</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="ابحث عن شركة برقم القيد أو اسم الشركة">
+            <button id="searchButton">بحث</button>
+        </div>
+
+        <div class="company-list" id="companyList">
+            <!-- سيتم عرض الشركات هنا -->
+        </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
